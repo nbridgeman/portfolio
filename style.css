@@ -1,0 +1,135 @@
+@media only screen and (min-width: 992px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        justify-content: center;
+        align-items: start;
+        margin-top: 1em;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .list {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 33% 33% 33%;
+        list-style-type: none;
+        gap: 1em;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .project a {
+        padding: 1em;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .project {
+        width: 90%;
+        margin: 0.5em;
+    }
+
+    .project a {
+        padding: 1em;
+    }
+
+    .project .url {
+        color: aqua;
+    }
+}
+
+.header h1 {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.icon {
+    height: 1.5em;
+}
+
+.pfp {
+    border-radius: 10rem;
+    width: 7em;
+    margin-top: 1em;
+}
+
+.project a {
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.project:hover {
+    background-color: #3d3d3d;
+}
+
+.project:hover .url {
+    color: aqua;
+}
+
+.project {
+    background-color: #1a1a1a;
+    border-radius: 1rem;
+    display: inline-block;
+}
